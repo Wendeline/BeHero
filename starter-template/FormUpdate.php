@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <?php include'starter-template/php/head.php'; ?>
+    <?php include'php/head.php'; ?>
     
     <body>
-         <?php include 'starter-template/php/nav.php'; 
+         <?php include 'php/nav.php'; 
          
         try {
             $req = "SELECT * FROM eleve WHERE idE=?";
@@ -36,8 +36,8 @@
             </fieldset>
         </form>
          <?php
-        include 'starter-template/php/footer.php';
-        include 'starter-template/php/script.php';
+        include 'php/footer.php';
+        include 'php/script.php';
     ?>
     </body>
 </html>

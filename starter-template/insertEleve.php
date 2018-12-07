@@ -1,4 +1,4 @@
-<?php include 'starter-template/php/coDatabase.php';
+<?php include 'php/coDatabase.php';
 
 //INSERT UN ELEVE 
 $nom = $_POST['nom'];

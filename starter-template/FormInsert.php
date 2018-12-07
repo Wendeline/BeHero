@@ -4,10 +4,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Ajouter un élève</title>
-         <?php include'starter-template/php/head.php'; ?>
+         <?php include'php/head.php'; ?>
     </head>
     <body>
-         <?php include 'starter-template/php/nav.php'; ?>
+         <?php include 'php/nav.php'; ?>
         <form action ="insertEleve.php" method="POST" >
             <fieldset>                
                 <label>Votre Nom :</label>
@@ -24,8 +24,8 @@
             </fieldset>
         </form>
          <?php
-        include 'starter-template/php/footer.php';
-        include 'starter-template/php/script.php';
+        include 'php/footer.php';
+        include 'php/script.php';
     ?>
     </body>
 </html>

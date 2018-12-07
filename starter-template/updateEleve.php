@@ -1,7 +1,8 @@
-<?php include 'starter-template/php/coDatabase.php';
+<?php include 'php/coDatabase.php';
 
+ var_dump($_POST);
 //UPDATE UN ELEVE 
-$id = $_GET['id'];
+$id = $_POST['id'];
 $nom = $_POST['nom'];
 $pre = $_POST['prenom'];
 $point = $_POST['point'];
@@ -19,7 +20,7 @@ try {
     $traitement -> bindParam(6,$id);
     $traitement -> execute();
     if ($traitement == true){
-        header('location:starter-template/index.php');
+        header('location:index.php');
     }
 
 }catch(PDOException $e){

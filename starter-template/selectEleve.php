@@ -1,5 +1,8 @@
-<?php include 'starter-template/php/coDatabase.php';
-
+<?php include 'php/coDatabase.php';
+      include'php/head.php';
+      include 'php/nav.php'; 
+      include 'php/footer.php';
+      //include 'php/script.php';
 //SELECT UN ELEVE 
 //$id = $_GET['id'];
 try {

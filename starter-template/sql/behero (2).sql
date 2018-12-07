@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 06 déc. 2018 à 21:28
+-- Généré le :  ven. 07 déc. 2018 à 06:17
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `classe` (
   `idC` int(11) NOT NULL AUTO_INCREMENT,
   `NominationC` char(50) NOT NULL,
   PRIMARY KEY (`idC`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `classe`
@@ -41,7 +41,9 @@ CREATE TABLE IF NOT EXISTS `classe` (
 
 INSERT INTO `classe` (`idC`, `NominationC`) VALUES
 (1, '2TSSIO'),
-(2, '1TSSIO');
+(2, '1TSSIO'),
+(3, 'Admin'),
+(4, 'Professeur');
 
 -- --------------------------------------------------------
 
@@ -59,18 +61,19 @@ CREATE TABLE IF NOT EXISTS `eleve` (
   `idC` int(11) NOT NULL,
   PRIMARY KEY (`idE`),
   KEY `fk_eleve` (`idC`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `eleve`
 --
 
 INSERT INTO `eleve` (`idE`, `NomE`, `PrenomE`, `nbPoint`, `password`, `idC`) VALUES
-(1, 'Swart', 'Wendeline', 0, 'motdepassecomplique', 1),
+(1, 'Swart', 'Wendeline', 1255, 'motdepassecomplique', 1),
 (2, 'Dehes', 'Nico', 0, 'uncertainmdp', 2),
 (3, 'Iwa', 'Ségo', 0, 'aaaaa', 1),
 (4, 'Ferrier', 'Cirill', 0, 'bbbbb', 1),
-(5, 'legofelegend', 'Teabears', 0, 'teabears', 2);
+(5, 'legofelegend', 'Teabears', 0, 'teabears', 2),
+(6, 'NameAdmin', 'PrenomAdmin', 42, 'admin', 3);
 
 -- --------------------------------------------------------
 

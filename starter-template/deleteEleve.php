@@ -1,4 +1,4 @@
-<?php include 'starter-template/php/coDatabase.php';
+<?php include 'php/coDatabase.php';
     
 $no=$_GET['id'];
 //Connexion à la BDD
@@ -12,7 +12,7 @@ $no=$_GET['id'];
                 echo 'Elève bien supprimé.';
                 }
             else{
-                header('location:../index.php');
+                header('location:index.php');
                 }
             }catch(PDOException $e){
                 die("Source : ".$dsn." Erreur : ".$e->getMessage());
